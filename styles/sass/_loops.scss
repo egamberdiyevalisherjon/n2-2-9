@@ -1,0 +1,46 @@
+$tomonlar: (
+  t: top,
+  b: bottom,
+  l: left,
+  r: right,
+  x: inline,
+  y: block,
+); // map
+
+@each $kalit-soz, $qiymat in $tomonlar {
+  @for $tartib-raqam from 0 through 10 {
+    .m#{$kalit-soz}-#{$tartib-raqam} {
+      margin-#{$qiymat}: #{$tartib-raqam / 2}rem;
+    }
+
+    .p#{$kalit-soz}-#{$tartib-raqam} {
+      padding-#{$qiymat}: #{$tartib-raqam / 2}rem;
+    }
+  }
+}
+
+// ranglar
+// primary = blue,
+// secondary = gray,
+// info = aqua,
+// danger = red,
+// warning = yellow,
+// success = green,
+// dark = black,
+// light = white,
+// indigo = indigo,
+// orange = orange
+
+/* 
+.text-primary { color: blue }
+.bg-primary { background-color: blue }
+.border-primary { border: 1px solid blue }
+.shadow-primary { box-shadow: 10px 10px blue }
+.text-shadow-primary { text-shadow: 10px 10px blue }
+*/
+
+// properties
+// color, background-color, border-color, box-shadow, text-shadow
+
+// function => rang
+// ss { box-shadow: 0 0 10px rang, 0 0 20px lighten(rang, 10) }

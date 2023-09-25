@@ -1,0 +1,30 @@
+@import "variables";
+@import "functions";
+@import "loops";
+
+body {
+  font-size: ikkilamchi(8px);
+}
+
+p {
+  border: ixtiyoriyNom($tur: "ingichka", $rang: green);
+}
+
+.invite-card {
+  border: ixtiyoriyNom(red, "qalin");
+}
+
+section#features {
+  background: asosiy-gradient(red, blue);
+}
+
+section#travel {
+  background: asosiy-gradient(red, blue);
+  color: if(
+    $tur == "ingichka",
+    1px,
+    if($tur == "ortcha", 2px, if($tur == "qalin", 3px, 4px))
+  );
+}
+
+// placeholder, inheritance, mixin

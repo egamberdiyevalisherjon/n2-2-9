@@ -1,0 +1,19 @@
+@function ikkilamchi($qiymat) {
+  @return 2 * $qiymat;
+}
+
+@function ixtiyoriyNom($rang, $tur) {
+  @if ($tur == "ingichka") {
+    @return 1px solid $rang;
+  } @else if($tur == "ortacha") {
+    @return 2px solid $rang;
+  } @else if($tur == "qalin") {
+    @return 3px solid $rang;
+  } @else {
+    @return 4px solid $rang;
+  }
+}
+
+@function asosiy-gradient($color1, $color2) {
+  @return linear-gradient(to bottom left, $color1 30%, $color2 70%);
+}
