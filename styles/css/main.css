@@ -1,3 +1,203 @@
+.text-primary {
+  color: blue;
+}
+
+.bg-primary {
+  background-color: blue;
+}
+
+.border-primary {
+  border-color: blue;
+}
+
+.shadow-primary {
+  box-shadow: 10px 10px blue;
+}
+
+.text-shadow-primary {
+  text-shadow: 10px 10px blue;
+}
+
+.text-secondary {
+  color: gray;
+}
+
+.bg-secondary {
+  background-color: gray;
+}
+
+.border-secondary {
+  border-color: gray;
+}
+
+.shadow-secondary {
+  box-shadow: 10px 10px gray;
+}
+
+.text-shadow-secondary {
+  text-shadow: 10px 10px gray;
+}
+
+.text-info {
+  color: aqua;
+}
+
+.bg-info {
+  background-color: aqua;
+}
+
+.border-info {
+  border-color: aqua;
+}
+
+.shadow-info {
+  box-shadow: 10px 10px aqua;
+}
+
+.text-shadow-info {
+  text-shadow: 10px 10px aqua;
+}
+
+.text-danger {
+  color: red;
+}
+
+.bg-danger {
+  background-color: red;
+}
+
+.border-danger {
+  border-color: red;
+}
+
+.shadow-danger {
+  box-shadow: 10px 10px red;
+}
+
+.text-shadow-danger {
+  text-shadow: 10px 10px red;
+}
+
+.text-warning {
+  color: yellow;
+}
+
+.bg-warning {
+  background-color: yellow;
+}
+
+.border-warning {
+  border-color: yellow;
+}
+
+.shadow-warning {
+  box-shadow: 10px 10px yellow;
+}
+
+.text-shadow-warning {
+  text-shadow: 10px 10px yellow;
+}
+
+.text-success {
+  color: green;
+}
+
+.bg-success {
+  background-color: green;
+}
+
+.border-success {
+  border-color: green;
+}
+
+.shadow-success {
+  box-shadow: 10px 10px green;
+}
+
+.text-shadow-success {
+  text-shadow: 10px 10px green;
+}
+
+.text-dark {
+  color: black;
+}
+
+.bg-dark {
+  background-color: black;
+}
+
+.border-dark {
+  border-color: black;
+}
+
+.shadow-dark {
+  box-shadow: 10px 10px black;
+}
+
+.text-shadow-dark {
+  text-shadow: 10px 10px black;
+}
+
+.text-light {
+  color: white;
+}
+
+.bg-light {
+  background-color: white;
+}
+
+.border-light {
+  border-color: white;
+}
+
+.shadow-light {
+  box-shadow: 10px 10px white;
+}
+
+.text-shadow-light {
+  text-shadow: 10px 10px white;
+}
+
+.text-indigo {
+  color: indigo;
+}
+
+.bg-indigo {
+  background-color: indigo;
+}
+
+.border-indigo {
+  border-color: indigo;
+}
+
+.shadow-indigo {
+  box-shadow: 10px 10px indigo;
+}
+
+.text-shadow-indigo {
+  text-shadow: 10px 10px indigo;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.border-orange {
+  border-color: orange;
+}
+
+.shadow-orange {
+  box-shadow: 10px 10px orange;
+}
+
+.text-shadow-orange {
+  text-shadow: 10px 10px orange;
+}
+
 .mt-0 {
   margin-top: 0rem;
 }
@@ -533,6 +733,10 @@
 .shadow-primary { box-shadow: 10px 10px blue }
 .text-shadow-primary { text-shadow: 10px 10px blue }
 */
+.shadow {
+  box-shadow: 0 0 10px blue, 0 0 20px #3333ff, 0 0 30px #000099, 0 0 30px #ff0080;
+}
+
 body {
   font-size: 16px;
 }

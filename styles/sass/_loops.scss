@@ -7,6 +7,41 @@ $tomonlar: (
   y: block,
 ); // map
 
+$colors: (
+  primary: blue,
+  secondary: gray,
+  info: aqua,
+  danger: red,
+  warning: yellow,
+  success: green,
+  dark: black,
+  light: white,
+  indigo: indigo,
+  orange: orange,
+);
+
+@each $color-key, $color in $colors {
+  .text-#{$color-key} {
+    color: $color;
+  }
+
+  .bg-#{$color-key} {
+    background-color: $color;
+  }
+
+  .border-#{$color-key} {
+    border-color: $color;
+  }
+
+  .shadow-#{$color-key} {
+    box-shadow: 10px 10px $color;
+  }
+
+  .text-shadow-#{$color-key} {
+    text-shadow: 10px 10px $color;
+  }
+}
+
 @each $kalit-soz, $qiymat in $tomonlar {
   @for $tartib-raqam from 0 through 10 {
     .m#{$kalit-soz}-#{$tartib-raqam} {
@@ -44,3 +79,12 @@ $tomonlar: (
 
 // function => rang
 // ss { box-shadow: 0 0 10px rang, 0 0 20px lighten(rang, 10) }
+
+@function ss($color) {
+  @return 0 0 10px $color, 0 0 20px lighten($color, 10),
+    0 0 30px darken($color, 20), 0 0 30px adjust-hue($color, 90);
+}
+
+.shadow {
+  box-shadow: ss($color: blue);
+}
